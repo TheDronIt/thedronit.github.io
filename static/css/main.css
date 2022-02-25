@@ -20,7 +20,15 @@ a
     text-decoration: none;
     color: inherit;
 }
-
+.link
+{
+    color: inherit;
+    transition-duration: 0.2s;
+}
+.link:hover
+{
+    color: #FFBA00;
+}
 .button
 {
     display: flex;
@@ -187,7 +195,14 @@ nav
 }
 
 
-
+footer
+{
+    max-width: 100%;
+    padding: 20px 100px;
+    text-align: center;
+    color: white;
+    background-color: #272626;
+}
 
 
 
