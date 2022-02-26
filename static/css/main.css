@@ -123,9 +123,19 @@ nav
     object-fit: cover;
     margin: auto;
 }
-.welcome_about
+.welcome__block
 {
     position: absolute;
+    top: 20%;
+    width: 100%;
+    display: grid;
+    align-items: flex-end;
+    justify-content: space-around;
+    grid-template-columns: auto auto;
+}
+.welcome_about
+{
+    /*position: absolute;*/
     max-width: 380px;
     text-align: center;
     left: 4%;
@@ -146,7 +156,7 @@ nav
 }
 .welcome_form
 {
-    position: absolute;
+    /*position: absolute;*/
     max-width: 280px;
     text-align: center;
     right: 13%;
