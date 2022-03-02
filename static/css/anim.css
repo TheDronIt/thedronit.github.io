@@ -1,0 +1,124 @@
+.loaderArea {
+    /*background: radial-gradient(circle, rgba(255,214,0,1) 0%, rgba(255,160,0,1) 100%);*/
+    background: linear-gradient(0deg, rgba(203,203,203,1) 0%, rgba(255,255,255,1) 100%);
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right:0;
+    bottom:0;
+    z-index: 100000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loaderArea img
+{
+    width: 60px;
+    height: 60px;
+}
+
+
+
+.welcome_about
+{
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+.welcome_form
+{
+    transform: translate(120%, 0);
+    opacity: 0;
+    transition: all 0.8s ease 0.4s;
+}
+.about-me__title
+{
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+.about-me__text
+{
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0.4s;
+}
+
+.card
+{
+    transform: translate(200%, 0);
+    transition: all 0.3s ease 0s;
+    opacity: 0;
+}
+
+.card__block.anim__active .card:nth-child(1)
+{
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 0.8s ease 0.4s; 
+}
+.card__block.anim__active .card:nth-child(2)
+{
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 0.8s ease 0.6s; 
+}
+.card-more
+{
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0.8s;
+}
+
+
+.anim__active
+{
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+
+.anim-once
+{
+    opacity: 0.3;
+}
+.process_card_number_1.anim__active
+{
+    animation-name: ProcessCard;
+    animation-delay: 0.2s;
+    animation-duration: 1s; 
+}
+.process_card_number_2.anim__active
+{
+    animation-name: ProcessCard;
+    animation-duration: 1s;
+    animation-delay: 1.4s;
+}
+.process_card_number_3.anim__active
+{
+    animation-name: ProcessCard;
+    animation-duration: 1s;
+    animation-delay: 2.6s;
+}
+@keyframes ProcessCard
+{
+    0%
+    {
+        opacity: 0.3;
+    }
+    30%
+    {
+        opacity: 2;
+    }
+    70%
+    {
+        opacity: 2;
+    }
+    100%
+    {
+        opacity: 0.3;
+    }
+}
+
+

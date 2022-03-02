@@ -15,6 +15,9 @@
 	<link rel="canonical" href="https://thedronit.ru/" /><!--Проверить-->
 	<link rel="shortcut icon" href="static/img/favicon.ico" type="image/x-icon"><!--Заполнить-->
 	<link rel="stylesheet" type="text/css" href="static/css/main.css">
+	<link rel="stylesheet" type="text/css" href="static/css/anim.css">
+	
+	<script src="static/js/jquery.min.js"></script>
 
 	<!-- Yandex.Metrika counter -->
 	<script type="text/javascript" >
@@ -32,7 +35,7 @@
 	<noscript><div><img src="https://mc.yandex.ru/watch/87640502" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 	<!-- /Yandex.Metrika counter -->
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<!-- Global site tag (gtag.js) - Google Analytics END -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-FE53HQY8EE"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
@@ -41,14 +44,20 @@
 
 		gtag('config', 'G-FE53HQY8EE');
 	</script>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<!-- Global site tag (gtag.js) - Google Analytics END -->
 
+	
 
 </head>
 <body>
+	
+	<div class="loaderArea">
+   		<img src="static/img/puff.svg" alt="">
+	</div>
+	
 	<nav>
 		<a href="/" class="nav_logo">
-			<b>Thedronit.Dev</b><br>
+			<b>thedronit.dev</b><br>
 			Разработка сайтов
 		</a>
 		<div class="nav_link">
@@ -65,7 +74,7 @@
 			<source src="static/video/network.mp4" type="">
 		</video>
 		<div class="welcome__block">
-			<div class="welcome_about">
+			<div class="welcome_about anim anim-no-hide">
 				<h1 class="welcome_about__title">
 					<span style="color: #FFBA00;">РАЗРАБОТКА САЙТОВ</span><br>
 					ЛЮБОЙ СЛОЖНОСТИ
@@ -74,7 +83,7 @@
 				<a href="/services" class="button" style="width: 30%; margin: 20px auto 0 auto;">Услуги</a>
 			</div>
 
-			<div class="welcome_form">
+			<div class="welcome_form anim anim-right-2 anim-no-hide">
 				<form method="POST">
 					<span class="welcome_form__title">
 						Свяжитесь с нами
@@ -92,8 +101,165 @@
 		</div>
 	</section>
 
+	<section class="wrapper">
+		<div class="about-me">
+			<h2 style="text-align: center;" class="anim about-me__title">
+				Разработка сайтов от thedronit.dev
+			</h2>
+			<span class="anim about-me__text">
+				Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem 	aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+			</span>
+		</div>
+
+		<div class="card__container section">
+			<h2>Кейсы</h2>
+			<div class="card__block anim anim-no-hide">
+
+				<div class="card">
+					<div class="card_image">
+						<img src="static/img/case/case1.png">
+					</div>
+					<div class="card_name">
+						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+					</div>
+					<div class="card_hashtag__container">
+						<span class="card_hashtag">
+							#сайт
+						</span>
+						<span class="card_hashtag">
+							#интернетмагазин
+						</span>
+						<span class="card_hashtag">
+							#тестовыйхэштэг
+						</span>
+					</div>
+					<a href="#" class="button">Подробнее</a>
+				</div>
+
+				<div class="card">
+					<div class="card_image">
+						<img src="static/img/case/case1.png">
+					</div>
+					<div class="card_name">
+						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+					</div>
+					<div class="card_hashtag__container">
+						<span class="card_hashtag">
+							#сайт
+						</span>
+						<span class="card_hashtag">
+							#интернетмагазин
+						</span>
+						<span class="card_hashtag">
+							#iam
+						</span>
+						<span class="card_hashtag">
+							#тестовыйхэштэг
+						</span>
+						<span class="card_hashtag">
+							#хэштэг
+						</span>
+						<span class="card_hashtag">
+							#TD
+						</span>
+					</div>
+					<a href="#" class="button">Подробнее</a>
+				</div>
+
+			</div>
+			<div class="card-more anim anim-no-hide">
+				<a href="#" class="button">Все работы</a>
+			</div>
+		</div>
+
+		<div class="card__container section">
+			<h2>Посты</h2>
+			<div class="card__block anim anim-no-hide">
+				<div class="card">
+					<div class="card_image">
+						<img src="static/img/post/post1.png">
+					</div>
+					<div class="card_name">
+						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+					</div>
+					<div class="card_hashtag__container">
+						<span class="card_hashtag">
+							#сайт
+						</span>
+						<span class="card_hashtag">
+							#интернетмагазин
+						</span>
+						<span class="card_hashtag">
+							#тестовыйхэштэг
+						</span>
+					</div>
+					<a href="#" class="button">Подробнее</a>
+				</div>
+				<div class="card">
+					<div class="card_image">
+						<img src="static/img/post/post1.png">
+					</div>
+					<div class="card_name">
+						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+					</div>
+					<div class="card_hashtag__container">
+						<span class="card_hashtag">
+							#сайт
+						</span>
+						<span class="card_hashtag">
+							#интернетмагазин
+						</span>
+						<span class="card_hashtag">
+							#iam
+						</span>
+						<span class="card_hashtag">
+							#тестовыйхэштэг
+						</span>
+						<span class="card_hashtag">
+							#хэштэг
+						</span>
+						<span class="card_hashtag">
+							#TD
+						</span>
+					</div>
+					<a href="#" class="button anim anim-no-hide">Подробнее</a>
+				</div>
+			</div>
+			<div class="card-more anim">
+				<a href="#" class="button">Все посты</a>
+			</div>
+		</div>
+
+		<div class="process section">
+			<h2>Процесс</h2>
+			<span class="process_text">
+				Мы работаем поэтапно. Вовлекаем в процесс. Вы всегда в курсе происходящего — контролируете куда движется проект, тратите минимум времени. (переделать)
+			</span>
+			<div class="process_card__container anim process_card__anim">
+				<div class="process_card">
+					<div class="process_card_number anim anim-once process_card_number_1">01</div>
+					<div class="process_card_title">Проектирование</div>
+					<div class="process_card_description">Выявляем требования к сайту и подготавливаем документацию для его разработки</div>
+				</div>
+				<div class="process_card">
+					<div class="process_card_number anim anim-once process_card_number_2">02</div>
+					<div class="process_card_title">Разработка</div>
+					<div class="process_card_description">Создаем сайт в строгом соответствии с требованиями, изложенными в техническом задании</div>
+				</div>
+				<div class="process_card">
+					<div class="process_card_number anim anim-once process_card_number_3">03</div>
+					<div class="process_card_title">Продвижение</div>
+					<div class="process_card_description">Обеспечиваем приток на сайт целевой аудитории всеми возможными способами: контекстная реклама, SMM, SEO</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+
 	<footer>
 		Code by: <a href="https://instagram.com/thedronit.dev" target="_blank" class="link">thedronit.dev</a>
 	</footer>
+	<script src="static/js/main.js"></script>
 </body>
 </html>
