@@ -1,5 +1,9 @@
 @media screen and (max-width: 980px){
 	
+	.welcome
+	{
+		min-height: 100vh;
+	}
 	.welcome__block
 	{
 		top: 7%;
@@ -7,24 +11,66 @@
 		justify-content: center;
 		grid-row-gap: 40px;
 	}
-	.welcome_about
+	.welcome_about, .welcome_about__title
 	{
 		font-size: 1.8rem;
 		line-height: 2rem;
 	}
-	.welcome_about__title
-	{
-		font-size: 2rem;
-		line-height: 2rem;
-	}
 
 
-	.card__block, .process_card__container
+	.card__block, .process_card__container, .post_footer
 	{
 		grid-template-columns: auto;
 	}
 	.process_card__container
 	{
 		grid-row-gap: 50px;
+	}
+
+	.first_section
+	{
+		padding-top: 70px;
+	}
+	.wrapper
+	{
+		margin-top: 0px;
+	}
+	.big-card__container
+	{
+		grid-gap: 20px;
+	}
+
+	.portfolio_about__container
+	{
+		grid-template-columns: auto;
+	}
+
+	.portfolio_preview
+	{
+		width: 305px;
+		height: 174px;
+	}
+	.splide__list__height
+	{
+		height: 350px !important;
+	}
+	.post_footer
+	{
+		grid-row-gap: 20px;
+		text-align: center;
+	}
+	.post_footer_contact-form
+	{
+		margin: auto;
+	}
+	.post_footer_share
+	{
+		margin-top: 20px;
+		grid-column: 1/2;
+	}
+	.ya-share2__container_mobile.ya-share2__container_size_l .ya-share2__icon 
+	{
+		width: 35px !important;
+		height: 35px !important;
 	}
 }

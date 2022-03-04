@@ -15,6 +15,7 @@
 	<link rel="canonical" href="https://thedronit.ru/portfolio/mehpromdv" /><!--Проверить-->
 	<link rel="shortcut icon" href="../../static/img/favicon.ico" type="image/x-icon"><!--Заполнить-->
 	<link rel="stylesheet" type="text/css" href="../../static/css/main.css">
+	<link rel="stylesheet" type="text/css" href="../../static/css/mobile.css">
 	<link rel="stylesheet" type="text/css" href="../../static/css/anim.css">
 
 	<link rel="stylesheet" href="../../static/splide/dist/css/splide.min.css">
@@ -59,17 +60,23 @@
 	</div>
 
 	<nav>
-		<a href="/" class="nav_logo">
-			<b>thedronit.dev</b><br>
-			Разработка сайтов
-		</a>
-		<div class="nav_link">
-			<a href="/portfolio">Портфолио</a>
-			<a href="#">Услуги</a>
-			<a href="#">Блог</a>
-			<a href="#">Контакты</a>
+		<input id="menu__toggle" type="checkbox" />
+	    <label class="menu__btn" for="menu__toggle">
+	      <span></span>
+	    </label>
+	    <div class="nav__container">
+			<a href="/" class="nav_logo">
+				<b>thedronit.dev</b><br>
+				Разработка сайтов
+			</a>
+			<div class="nav_link">
+				<a href="/portfolio">Портфолио</a>
+				<a href="#">Услуги</a>
+				<a href="#">Блог</a>
+				<a href="#">Контакты</a>
+			</div>
+			<a href="#contact" class="button nav_contact__button">Связаться</a>
 		</div>
-		<a href="#contact" class="button nav_contact__button">Связаться</a>
 	</nav>
 
 
@@ -86,13 +93,19 @@
 		<div class="portfolio_about__container">
 			<div class="portfolio_about_task anim">
 				<div class="portfolio_about_task_el">
-					<h2 class="portfolio_block-title">Задача</h2>
-					<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</span>
+					<h2 class="portfolio_block-title">Про компанию</h2>
+					<span>MehpromDV - Дальневосточное механообрабатывающее производство. Основным видом деятельности является «Обработка металлов и нанесение покрытий на металлы»</span>
 				</div>
 				<div class="portfolio_about_task_el">
-					<h2 class="portfolio_block-title">Решение</h2>
-					<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</span>
+					<h2 class="portfolio_block-title">Задача</h2>
+					<span>Сделать сайт, в котором будут видны основные направления компании, а именно: изготавление металлоконструкций, судовых кранов и лебедок, и эжекторов. Так же необходимо было создать карточки с их товарами, в которых находились бы харрактеристики товаров, а для удобного поиска добавить поисковик.</span>
 				</div>
+				<!--
+				<div class="portfolio_about_task_el">
+					<h2 class="portfolio_block-title">Решение</h2>
+					<span>Lorem.</span>
+				</div>
+				-->
 			</div>
 			<div class="portfolio_about_info anim">
 				<div class="portfolio_about_info_hashtags">
@@ -108,11 +121,12 @@
 						<b>Год</b>
 						<span>2020</span>
 					</div>
-					
+					<!--
 					<div class="portfolio_about_info_fullinfo_el">
 						<b>Ссылка</b>
 						<a href="#">mehpromdv.ru</a>
 					</div>
+					-->
 				</div>
 				<div class="portfolio_about_info_contact">
 					<span>Хотите сайт себе?<br>Самое время заказать!</span>
@@ -128,30 +142,35 @@
 		<div class="portfolio_made anim ">
 			<h2 class="portfolio_block-title">Что было сделано?</h2>
 			<ul>
-				<li>Lorem</li>
-				<li>Lorem</li>
-				<li>Lorem</li>
-				<li>Lorem</li>
-				<li>Lorem</li>
+				<li>Функционал разделения товаров по категориям с возможность редактирования</li>
+				<li>Подключение удобного текстового редактора для создания описания товаров</li>
+				<li>Форма связи с оповещением на почту</li>
+				<li>Удобная поисковая система на сайте</li>
+				<li>Страница с новостями</li>
 			</ul>
 		</div>
 
 		<div class="splide">
 			<div class="splide__track">
-				<ul class="splide__list" style="height: 615px;">
+				<ul class="splide__list splide__list__height">
 					<li class="splide__slide">
 						<div class="portfolio_preview block anim">
-							<img src="../../static/img/portfolio/mehpromdv/preview.jpg" alt="">
+							<img src="../../static/img/portfolio/mehpromdv/slide1.jpg" alt="">
 						</div>
 					</li>
 					<li class="splide__slide">
 						<div class="portfolio_preview block anim">
-							<img src="../../static/img/portfolio/mehpromdv/preview.jpg" alt="">
+							<img src="../../static/img/portfolio/mehpromdv/slide2.jpg" alt="">
 						</div>
 					</li>
 					<li class="splide__slide">
 						<div class="portfolio_preview block anim">
-							<img src="../../static/img/portfolio/mehpromdv/preview.jpg" alt="">
+							<img src="../../static/img/portfolio/mehpromdv/slide3.jpg" alt="">
+						</div>
+					</li>
+					<li class="splide__slide">
+						<div class="portfolio_preview block anim">
+							<img src="../../static/img/portfolio/mehpromdv/slide4.jpg" alt="">
 						</div>
 					</li>
 				</ul>
@@ -160,7 +179,7 @@
 
 		<div class="portfolio_about_task_el portfolio_result anim">
 			<h2 class="portfolio_block-title">Итог</h2>
-			<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</span>
+			<span>Нам удалось реализовать все просьбы заказчика, а так же продивинуть сайт на 1 место в поисковике! Получился интересный проект, который в последствии принес новых клиентов компании</span>
 		</div>
 
 		<div class="portfolio_instagram anim">
@@ -198,7 +217,7 @@
 					Расскажите друзьям!<br>
 					Им понравится!
 				</span>
-				<div class="ya-share2" data-curtain data-size="l" data-shape="round" data-color-scheme="whiteblack" data-services="messenger,vkontakte,facebook,odnoklassniki,telegram,whatsapp"></div>
+				<div class="ya-share2" data-curtain data-size="l" data-shape="round" data-color-scheme="whiteblack" data-services="vkontakte,telegram,twitter,facebook,odnoklassniki,whatsapp"></div>
 			</div>
 		</div>
 

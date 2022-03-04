@@ -409,6 +409,10 @@ b
 {
     margin-bottom: 100px;
 }
+.splide__list__height
+{
+    height: 615px !important;
+}
 
 .portfolio_instagram
 {

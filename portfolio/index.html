@@ -15,6 +15,7 @@
 	<link rel="canonical" href="https://thedronit.ru/portfolio" /><!--Проверить-->
 	<link rel="shortcut icon" href="../static/img/favicon.ico" type="image/x-icon"><!--Заполнить-->
 	<link rel="stylesheet" type="text/css" href="../static/css/main.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/mobile.css">
 	<link rel="stylesheet" type="text/css" href="../static/css/anim.css">
 	
 	<script src="../static/js/jquery.min.js"></script>
@@ -57,17 +58,23 @@
 	</div>
 
 	<nav>
-		<a href="/" class="nav_logo">
-			<b>thedronit.dev</b><br>
-			Разработка сайтов
-		</a>
-		<div class="nav_link">
-			<a href="/portfolio">Портфолио</a>
-			<a href="#">Услуги</a>
-			<a href="#">Блог</a>
-			<a href="#">Контакты</a>
+		<input id="menu__toggle" type="checkbox" />
+	    <label class="menu__btn" for="menu__toggle">
+	      <span></span>
+	    </label>
+	    <div class="nav__container">
+			<a href="/" class="nav_logo">
+				<b>thedronit.dev</b><br>
+				Разработка сайтов
+			</a>
+			<div class="nav_link">
+				<a href="/portfolio">Портфолио</a>
+				<a href="#">Услуги</a>
+				<a href="#">Блог</a>
+				<a href="#">Контакты</a>
+			</div>
+			<a href="#contact" class="button nav_contact__button">Связаться</a>
 		</div>
-		<a href="#contact" class="button nav_contact__button">Связаться</a>
 	</nav>
 
 	<section class="page-info__section first_section anim anim-no-hide">
@@ -78,7 +85,7 @@
 			
 			<div class="card anim anim-no-hide">
 				<div class="card_image">
-					<img src="../static/img/case/case1.png" alt="">
+					<img src="../static/img/portfolio/mehpromdv/card.png" alt="">
 				</div>
 				<div class="card_name">
 					MehpromDV
