@@ -1,0 +1,30 @@
+@media screen and (max-width: 980px){
+	
+	.welcome__block
+	{
+		top: 7%;
+		grid-template-columns: 90vw;
+		justify-content: center;
+		grid-row-gap: 40px;
+	}
+	.welcome_about
+	{
+		font-size: 1.8rem;
+		line-height: 2rem;
+	}
+	.welcome_about__title
+	{
+		font-size: 2rem;
+		line-height: 2rem;
+	}
+
+
+	.card__block, .process_card__container
+	{
+		grid-template-columns: auto;
+	}
+	.process_card__container
+	{
+		grid-row-gap: 50px;
+	}
+}
