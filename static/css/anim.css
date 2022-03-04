@@ -72,13 +72,230 @@
 }
 
 
+
+.page-info__headline
+{
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0.4s;
+}
+.big-card__container .card.anim__active
+{
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 0.8s ease 0.4s; 
+}
+
+.portfolio-banner_brand_name
+{
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+.portfolio-banner_brand_site-type
+{
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0.6s;
+}
+
+
+.portfolio_about_task div
+{
+    transform: translate(0, 120%);
+    transition: all 0.4s ease 0s;
+    opacity: 0;
+}
+.portfolio_about_task.anim__active div:nth-child(1)
+{
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 0.6s ease 0.4s; 
+}
+.portfolio_about_task.anim__active div:nth-child(2)
+{
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 0.6s ease 0.6s; 
+}
+
+
+.portfolio_about_info
+{
+    transform: translate(120%, 0);
+    transition: all 0.4s ease 0s;
+    opacity: 0;
+}
+.portfolio_about_info.anim__active
+{
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 0.4s ease 1.4s;
+}
+
+
+.portfolio_preview
+{
+    transform: translate(120%, 0);
+    transition: all 0.8s ease 0s;
+    opacity: 0;
+}
+.block
+{
+    box-shadow: none;
+}
+.block.anim__active
+{
+    transition-delay: 1s;
+    box-shadow: 10px 10px 0px 4px #FFD600, -10px -10px 0px 4px #000000;
+}
+
+.portfolio_made ul li
+{
+    transform: translate(-120%, 0);
+    transition: all 0.3s ease 0s;
+}
+.portfolio_made.anim__active ul li
+{
+    transform: translate(0, 0);
+}
+.portfolio_made.anim__active ul li:nth-child(1)
+{
+    transition: all 0.4s ease 0.1s;
+}
+.portfolio_made.anim__active ul li:nth-child(2)
+{
+    transition: all 0.4s ease 0.2s;
+}
+.portfolio_made.anim__active ul li:nth-child(3)
+{ 
+    transition: all 0.4s ease 0.3s;
+}
+.portfolio_made.anim__active ul li:nth-child(4)
+{   
+    transition: all 0.4s ease 0.4s;
+}
+.portfolio_made.anim__active ul li:nth-child(5)
+{ 
+    transition: all 0.4s ease 0.5s;
+}
+.portfolio_made.anim__active ul li:nth-child(6)
+{ 
+    transition: all 0.4s ease 0.5s;
+}
+.portfolio_made.anim__active ul li:nth-child(7)
+{ 
+    transition: all 0.4s ease 0.6s;
+}
+.portfolio_made.anim__active ul li:nth-child(8)
+{ 
+    transition: all 0.4s ease 0.7s;
+}
+.portfolio_made.anim__active ul li:nth-child(9)
+{ 
+    transition: all 0.4s ease 0.8s;
+}
+.portfolio_made.anim__active ul li:nth-child(10)
+{ 
+    transition: all 0.4s ease 0.9s;
+}
+.portfolio_made h2
+{
+    transform: translate(0, 120%);
+    transition: all 0.8s ease 0s;
+    opacity: 0;
+}
+.portfolio_made.anim__active h2
+{
+    transform: translate(0px, 0px);
+    opacity: 1
+}
+
+.portfolio_result h2
+{
+    transform: translate(0px, 120%);
+    opacity: 0;
+}
+.portfolio_result.anim__active h2
+{
+    transform: translate(0, 0);
+    transition: all 0.8s ease 0s;
+    opacity: 1;
+}
+.portfolio_result span
+{
+    transform: translate(120%, 0);
+    opacity: 0;
+}
+.portfolio_result.anim__active span
+{
+    transform: translate(0, 0);
+    transition: all 0.8s ease 0.4s;
+    opacity: 1;
+}
+
+
+.portfolio_instagram h2, .portfolio_instagram span, .portfolio_instagram div
+{
+    transform: translate(0, 120%);
+    opacity: 0;
+}
+.portfolio_instagram.anim__active h2
+{
+    transform: translate(0, 0);
+    transition: all 0.8s ease 0s;
+    opacity: 1;
+}
+.portfolio_instagram.anim__active span
+{
+    transform: translate(0, 0);
+    transition: all 0.8s ease 0.2s;
+    opacity: 1;
+}
+.portfolio_instagram.anim__active div
+{
+    transform: translate(0, 0);
+    transition: all 0.4s ease 0.8s;
+    opacity: 1;
+}
+
+
+.post_footer_contact-messages b, .post_footer_contact-messages span
+{
+    transform: translate(0, 120%);
+    opacity: 0;
+}
+.post_footer_contact-messages.anim__active b
+{
+    transform: translate(0, 0);
+    transition: all 0.8s ease 0s;
+    opacity: 1;
+}
+.post_footer_contact-messages.anim__active span
+{
+    transform: translate(0, 0);
+    transition: all 0.8s ease 0.4s;
+    opacity: 1;
+}
+.post_footer_contact-form
+{
+    transform: translate(120%, 0);
+    transition: all 0.8s ease 0.8s;
+    opacity: 0;
+}
+.post_footer_share
+{
+    transform: translate(0, 120%);
+    transition: all 0.8s ease 0.9s;
+    opacity: 1;
+}
+
+
 .anim__active
 {
     transform: translate(0px, 0px);
     opacity: 1;
 }
-
-
 .anim-once
 {
     opacity: 0.3;

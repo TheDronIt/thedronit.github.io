@@ -20,6 +20,11 @@ a
     text-decoration: none;
     color: inherit;
 }
+b
+{
+    font-weight: normal;
+    font-family: Montserrat_bold;
+}
 .link
 {
     color: inherit;
@@ -70,6 +75,11 @@ a
     padding: 20px;
     max-width: 1000px;
     overflow: hidden;
+    min-height: 90vh;
+}
+.first_section
+{
+    padding-top: 100px;
 }
 .section
 {
@@ -336,6 +346,195 @@ nav
 {
     font-family: Montserrat_bold;
     font-size: 2rem;
+}
+
+
+.page-info__section
+{
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    font-family: Montserrat_bold;
+    font-size: 2.5rem;
+}
+.big-card__container
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 340px);
+    justify-content: center;
+    grid-gap: 80px;
+}
+.portfolio-banner
+{
+    width: 100%;
+    height: 100vh;
+    position: relative;   
+}
+.portfolio-banner img
+{
+    filter: brightness(35%);
+}
+.portfolio-banner_brand
+{
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: Montserrat_bold;
+    font-size: 2.2rem;
+    color: #E6E6E6;
+}
+.portfolio-banner_brand_name
+{
+    display: block;
+    font-family: Montserrat_black;
+    font-size: 3.6rem;
+    color: white;
+    margin-bottom: 5px;
+}
+.portfolio_about__container
+{
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    grid-column-gap: 90px;
+}
+.portfolio_about_task_el
+{
+    margin-bottom: 50px;
+}
+.portfolio_block-title
+{
+    margin:0 0 5px 0;
+}
+.portfolio_about_info_fullinfo
+{
+    margin: 30px 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 8px;
+}
+.portfolio_about_info_fullinfo_el
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.portfolio_about_info_contact span
+{
+    display: block;
+    font-family: Montserrat_bold;
+    margin-bottom: 10px;
+}
+.block
+{
+    box-shadow: 10px 10px 0px 4px #FFD600, -10px -10px 0px 4px #000000;
+}
+.portfolio_preview
+{
+    margin: 120px auto 180px auto;
+    max-width: 800px;
+    height: 450px;
+}
+.portfolio_made ul
+{
+    margin: 0;
+    padding: 0 0 0 15px;
+}
+.portfolio_made ul li
+{
+    margin-bottom: 8px;
+}
+.splide
+{
+    margin-bottom: 100px;
+}
+
+.portfolio_instagram
+{
+    text-align: center;
+    margin: 120px auto 80px auto;
+}
+.portfolio_instagram span
+{
+    display: block;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+.portfolio_instagram div
+{
+    width: 250px;
+    margin:auto;
+}
+
+
+
+.post_footer
+{
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 200px;
+    grid-row-gap: 70px;
+    font-size: 1.8rem;
+}
+.post_footer_contact-messages b
+{
+    display: block;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+.post_footer_contact-form
+{
+    width: 300px;
+}
+.post_footer_contact-form form
+{
+    max-width: 250px;
+    margin: auto;
+}
+.post_form__input
+{
+    width: 100%;
+    background: none;
+    border: none;
+    color: black;
+    border-bottom: 3px solid black;
+    outline:none;
+    font-size: 1.6rem;
+    margin: 15px 0;
+}
+.post_form__input::placeholder
+{
+    color: black;
+}
+.post_form__privacy
+{
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.post_form__privacy a:hover
+{
+    text-decoration: underline;
+}
+.post_form__button
+{
+    margin-top: 10px;
+    width: 100%;
+}
+.post_footer_share
+{
+    margin: auto;
+    grid-column: 1/3;
+}
+.post_footer_share span
+{
+    font-family: Montserrat_bold;
+    display: block;
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
 }
 
 footer
