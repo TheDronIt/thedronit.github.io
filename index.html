@@ -97,6 +97,29 @@
 				<a href="/services" class="button" style="width: 30%; margin: 20px auto 0 auto;">Услуги</a>
 			</div>
 
+
+			<!-- 
+				https://docs.google.com/forms/d/e/1FAIpQLSf2OXGnrubfX3fOvszJheM0uKnXevwdcGpjoLs7BpFUrkFTkA/formResponse 
+				
+				https://docs.google.com/forms/d/e/1FAIpQLSf2OXGnrubfX3fOvszJheM0uKnXevwdcGpjoLs7BpFUrkFTkA/formResponse?entry.199050963=itismyname&entry.1098988925=itisphone&entry.2026942424=itiscomment
+			-->
+			<div class="welcome_form anim anim-right-2 anim-no-hide">
+				<form method="POST" action="https://docs.google.com/forms/d/e/1FAIpQLSf2OXGnrubfX3fOvszJheM0uKnXevwdcGpjoLs7BpFUrkFTkA/formResponse" target="_self">
+					<span class="welcome_form__title">
+						Свяжитесь с нами
+					</span>
+					Заполните форму и мы перезвоним вам<br><br>
+					<input type="text" name="entry.199050963" placeholder="Имя" class="welcome_form__input" id="welcome_name">
+					<input type="text" name="entry.1098988925" placeholder="Телефон" class="welcome_form__input" id="welcome_phone">
+					<input type="text" name="entry.2026942424" placeholder="Комментарий" class="welcome_form__input" id="welcome_comment">
+					<span class="welcome_form__privacy">
+						Нажимая на кнопку вы соглашаетесь с <a href="/privacy" style="color: #FFBA00;">политикой конфиденциальности</a>
+					</span>
+					<input type="submit" id="submit" name="button" value="Отправить" class="button welcome_form__button">
+				</form>
+			</div>
+
+			<!--
 			<div class="welcome_form anim anim-right-2 anim-no-hide">
 				<form method="POST">
 					<span class="welcome_form__title">
@@ -111,7 +134,8 @@
 					</span>
 					<input type="submit" name="button" value="Отправить" class="button welcome_form__button">
 				</form>
-			</div>
+			</div>-->
+			
 		</div>
 	</section>
 
@@ -156,56 +180,30 @@
 		<div class="card__container section">
 			<h2>Посты</h2>
 			<div class="card__block anim anim-no-hide">
+				
 				<div class="card">
 					<div class="card_image">
-						<img src="static/img/post/post1.png" alt="">
+						<img src="static/img/post/site-vs-insagram.png" alt="">
 					</div>
 					<div class="card_name">
-						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+						Зачем нам сайт? У нас есть инстаграм!
 					</div>
 					<div class="card_hashtag__container">
 						<span class="card_hashtag">
 							#сайт
 						</span>
 						<span class="card_hashtag">
-							#интернетмагазин
+							#инстаграм
 						</span>
 						<span class="card_hashtag">
-							#тестовыйхэштэг
+							#SEO
 						</span>
 					</div>
-					<a href="#" class="button">Подробнее</a>
+					<a href="/post/site-vs-insagram" class="button">Подробнее</a>
 				</div>
-				<div class="card">
-					<div class="card_image">
-						<img src="static/img/post/post1.png" alt="">
-					</div>
-					<div class="card_name">
-						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-					</div>
-					<div class="card_hashtag__container">
-						<span class="card_hashtag">
-							#сайт
-						</span>
-						<span class="card_hashtag">
-							#интернетмагазин
-						</span>
-						<span class="card_hashtag">
-							#iam
-						</span>
-						<span class="card_hashtag">
-							#тестовыйхэштэг
-						</span>
-						<span class="card_hashtag">
-							#хэштэг
-						</span>
-						<span class="card_hashtag">
-							#TD
-						</span>
-					</div>
-					<a href="#" class="button anim anim-no-hide">Подробнее</a>
-				</div>
+
 			</div>
+
 			<div class="card-more anim">
 				<a href="#" class="button">Все посты</a>
 			</div>
@@ -253,8 +251,39 @@
         x.async = true;
         document.body.appendChild(x);
     </script>
+
+    <script type="text/javascript">
+		$('#submit').click(function(e){
+			e.preventDefault();
+		    var formData = $(this).parent('form').serialize();
+		    $.ajax({
+		       	url: 'https://docs.google.com/forms/d/e/1FAIpQLSf2OXGnrubfX3fOvszJheM0uKnXevwdcGpjoLs7BpFUrkFTkA/formResponse',
+		       	method: 'POST',
+		       	data: formData,
+		       	statusCode: {
+		        		200: function(response) {
+		            	alert('200');
+		           	},
+		           	201: function(response) {
+		            	alert('201');
+		           	},
+		           	400: function(response) {
+		            	alert('400');
+		           	},
+		           	404: function(response) {
+		            	alert('401');
+		           	}
+		       	},
+		       	success: function() {
+		        	alert('Успешно');
+		       	},
+		   	});
+		    location.reload()
+		});
+	</script>
+
      <!-- Umnico chat END --> 
-   
 	<script src="static/js/main.js"></script>
+	<script src="static/js/googleform.js"></script>
 </body>
 </html>

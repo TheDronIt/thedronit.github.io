@@ -510,7 +510,57 @@ footer
     color: white;
     background-color: #272626;
 }
-
+.post_preview
+{
+    padding-top: 70px;
+    max-width: 100%; 
+    background-color: #FFD600;
+    display: flex;
+    justify-content: center;
+}
+.post_preview img
+{
+    max-width: 500px;
+}
+.post_author
+{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 60px;
+    grid-row-gap: 15px;
+}
+.post_author_image
+{
+    display: flex;
+    justify-content: center;
+}
+.post_author_image img
+{
+    width: 125px;
+    height: 125px;
+    border-radius: 100%;
+}
+.post_author_name
+{
+    font-family: Montserrat_bold;
+    color: #4E4E4E;  
+}
+.post_author_text
+{
+    display: grid;
+    grid-rows: 1/3;
+    font-size: 1.8rem;
+    color: #737373;
+}
+.post_main
+{
+    margin: 50px 0;
+}
+.post_main h2
+{
+    font-size: 2rem;
+    margin-bottom: 0;
+}
 
 
 /* HEADER  */
