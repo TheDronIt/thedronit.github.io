@@ -127,6 +127,7 @@ b
     font-size: 2rem;
     border-radius: 15px;
     padding: 30px;
+    backdrop-filter: blur(4px);
 }
 .welcome_about__title
 {
@@ -148,6 +149,7 @@ b
     font-size: 1.8rem;
     border-radius: 15px;
     padding: 30px 40px;
+    backdrop-filter: blur(4px);
 }
 .welcome_form__title
 {
@@ -579,6 +581,54 @@ footer
     border-radius: 7px;
     background-color: #E3E3E3;
 }
+.contacts
+{
+    margin: 80px 0;
+}
+.contacts h1
+{
+    font-family: Montserrat_bold;
+    font-size: 2.6rem;
+}
+.contacts__container
+{
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    grid-gap: 50px;
+}
+.contacts__image
+{
+    width: 350px;
+    height: 350px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px 5px lightgray;
+}
+.contacts_el
+{
+    margin: 0 0 30px 0;
+    font-weight: bold;
+}
+.contacts_el h2
+{
+    margin: 0 0 8px 0;
+}
+.contacts_el span
+{
+    display: block;
+}
+.contacts_el_social img
+{
+    width: 25px;
+    height: 25px;
+    margin-right: 8px;
+}
+.contacts_el_social
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
 
 
 
