@@ -73,4 +73,11 @@
 		width: 35px !important;
 		height: 35px !important;
 	}
+
+
+	.post_author
+	{
+		grid-template-columns: 1fr;
+		text-align: center;
+	}
 }
