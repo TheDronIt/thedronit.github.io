@@ -80,4 +80,15 @@
 		grid-template-columns: 1fr;
 		text-align: center;
 	}
+
+	.contacts__container
+	{
+		grid-template-columns: auto;
+		grid-row-gap: 5px;
+	}
+	.contacts__image
+	{
+		width: 100%;
+		margin: auto;
+	}
 }
